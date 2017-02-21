@@ -10,12 +10,11 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
 	<!-- JS -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
-
+	
 	<!-- dev-->
 	<!--skewer -->
 	<script src="http://localhost:8080/skewer"></script>
@@ -42,8 +41,8 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="ballpark-nav">
 					<ul class="nav navbar-nav">
-						<li><a href="/">My Ballparks</a></li>
-						<li><a href="/users">Add a Ballpark</a></li>
+						<li><a href="/user">My Ballparks</a></li>
+						<li><a href="/ballparks">Add a Ballpark</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -52,7 +51,7 @@
 	 <!-- /.container -->
 		<div class="row">
 		  
-			<div class="col-md-12">
+			<div class="col-md-12" style="padding: 0px 30px 5px">
 				<h1>Ballparks I've Visited </h1>	
 			</div>
 		</div>
@@ -83,30 +82,33 @@
 
 		   <div class="row">
 		     
-		     <div class="col-lg col-md-4 col-xs-2  thumb">
-                       <a class="thumbnail" href="#">
-			 <img class="img-responsive" src="/home/myharpynest/mlb-app-mockup/Minute-Maid-Park.jpg" alt="">
-                       </a>
+		     <div class="col-lg col-md-4 col-xs-2 col-border">
+                       <a class="thumbnail" href="/images/minute-maid-park.jpg" >
+			 <!--can't figure how to use relative path name for the image file, in bootstrap-->
+			 <img src="http://ballparknerd.com/wp-content/uploads/2016/03/23-Minute-Maid-Park.jpg">
+                      </a>
 		     </div>
 		     <div class="col-lg col-md-2 col-xs-4">
-		       Minute-Maid-Ballpark<br>
-		       Visited on 2/6/2014<br>
-		       &lt;Stadium Details&gt;<br>
+		       <dl>
+			 <dt>Minute Maid Ballpark</dt>
+			 Visited on 2/6/2014
+			 &lt;Stadium Details&gt;
+			 </dl>
 		     </div>
 
 
-		     <div class="col-lg col-md-4  col-xs-2 thumb">
-                       <a class="thumbnail" href="#">
-			 <img class="img-responsive" src="/home/myharpynest/mlb-app-mockup/Globe-Life-Park.jpg" alt="">
+		     <div class="col-lg col-md-4  col-xs-2 col-border">
+                       <a class="thumbnail" href="#" >
+			 <img  src="http://ballparknerd.com/wp-content/uploads/2016/03/24-Globe-Life-Park.jpg">
                        </a>
 		     </div>
 		     <div class="col-lg col-md-2 col-xs-4">
-		       Globe Life Park
-		       Visited on 6/24/2015<br>
-		       &lt;Stadium Details&gt;<br>
+		       <dl>
+			 <dt>Globe Life Park</dt>
+			 Visited on 6/24/2015
+			 &lt;Stadium Details&gt;
+		       </dl>
 		     </div>
-		     
-		   </div>
 		   
 		</div>
 
@@ -120,6 +122,5 @@
                        </div>
 		     </div>
 		   </footer>
-
 </body>
 </html>
