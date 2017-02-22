@@ -1,0 +1,11 @@
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary{
+    
+    color: white;
+    background-color: red;
+    border-color: black;
+    font-size:40px;
+    font-weight: bold;
+}
