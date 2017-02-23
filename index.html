@@ -57,9 +57,13 @@
 				<h1>Ballparks I've Visited </h1>	
 			</div>
 		</div>
-		<div id="map" style="width:device-width;height:50vh;background:white"></div>
-	
-		<script>
+		<div class="row">
+		  <div class="col-md-12" style="padding: 0px 30px 5px">
+		    <div id="map" style="width:device-width;height:50vh;background:white"></div>
+
+		  </div>
+		  <div>
+		 <script>
 		  function myMap() {
 
 		  var mapOptions = {
@@ -215,10 +219,18 @@
 		  
 		 <div class="container-fluid">
 		   <div class="row">
-		   
-		    <div class="col-md-6">
+		     
+		     <div class="col-md-3">
+		      
+		     </div>
+
+		      <div id="searchbutton" class="col-md-6">
+		      <button  type="button" class="btn btn-primary btn-lg btn-block" onclick="$('#searchinput').show();$('#dropbutton').show();$('#searchbutton').hide();">+Add A Ballpark</button>
+		    </div>
+		     
+		    <div id="searchinput" class="col-md-6" style="display:none;">
 		      <form class="form-wrapper cf">
-  			<input type="text" style="width: device-width; height: 72px" placeholder="Search by Name..." list="datalist">
+  			<input  type="text" style="width: 730px; device-width; height: 75px;" placeholder="Search by Name..." list="datalist">
 			<datalist id="datalist">
 			  <option value="Fenway Park">
 			  <option value="AT&T Park">
@@ -230,7 +242,7 @@
 			  <option value="Coors Field">
 			  <option value="Great American Ball Park">
 			</datalist>
-			<button type="button" data-toggle="dropdown">Search by
+			<button id="dropbutton" type="button" data-toggle="dropdown" style="display:none;">Search by
 			  <span class="caret"></span></button>
 			<ul class="dropdown-menu">
 			  <li><a href="#">Name</a></li>
@@ -240,9 +252,7 @@
 		      </form>
 		    </div>
 
-		    <div class="col-md-6">
-		      <button type="button" class="btn btn-primary btn-lg btn-block" onclick="">+Add A Ballpark</button>
-		    </div>
+		   
 		    <!--end row-->
 		   </div>
 		 </div>
